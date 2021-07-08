@@ -1,3 +1,5 @@
+rootProject.name = "Navigation POC"
+
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
@@ -5,8 +7,17 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Navigation"
-include ':app'
-include ':core'
-include ':feature1'
-include ':feature2'
+
+// core modules
+include ":app"
+include ":core"
+include ":di"
+
+// feature modules
+include ":feature1"
+include ":feature2"
+
+// navigation modules
+include ":navigation:core"
+include ":navigation:feature1"
+include ":navigation:feature2"
