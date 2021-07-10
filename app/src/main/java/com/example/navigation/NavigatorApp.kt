@@ -1,12 +1,12 @@
 package com.example.navigation
 
 import android.app.Application
-import com.example.core.NavigatorWrapper
+import dagger.hilt.android.HiltAndroidApp
 
-class NavigatorApp : Application(){
+@HiltAndroidApp
+class NavigatorApp : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        NavigatorWrapper.navigator = AppNavigator
     }
 }

@@ -1,29 +1,33 @@
 package com.example.feature1
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import com.example.core.NavigatorWrapper
+import androidx.appcompat.app.AppCompatActivity
 import com.example.feature1.databinding.ActivityFeature1Binding
+import com.example.navigation.feature2.Feature2Navigator
+import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
 
+@AndroidEntryPoint
 class Feature1Activity : AppCompatActivity() {
 
-    private val navigator: Feature1Navigator = NavigatorWrapper.getNavigator()
+    @Inject
+    lateinit var feature2Navigator: Feature2Navigator
+
     private lateinit var binding: ActivityFeature1Binding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityFeature1Binding.inflate(layoutInflater)
-
         setContentView(binding.root)
 
         binding.btnFeatureTwo.setOnClickListener {
-            navigator.goToFeature2(this)
+            feature2Navigator.goToFeature2(this)
             finish()
         }
+
         binding.btnFeatureMain.setOnClickListener {
-            navigator.goToMain(this)
-            finish()
+//            navigator.goToMain(this)
+//            finish()
         }
     }
 }
