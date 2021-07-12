@@ -14,12 +14,12 @@ include ":core"
 include ":di"
 
 // feature modules
+include ":main"
 include ":feature1"
 include ":feature2"
 
 // navigation modules
 include ":navigation:core"
+include ":navigation:main"
 include ":navigation:feature1"
 include ":navigation:feature2"
-include ':navigation:main'
-include ':main'
