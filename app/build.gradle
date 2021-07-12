@@ -5,7 +5,7 @@ plugins {
 
 android {
     defaultConfig {
-        applicationId "com.example.navigation"
+        applicationId "dev.pimentel.modular.navigation"
     }
 }
 
