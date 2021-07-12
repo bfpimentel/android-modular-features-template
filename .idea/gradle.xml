@@ -13,7 +13,6 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/buildSrc" />
-            <option value="$PROJECT_DIR$/core" />
             <option value="$PROJECT_DIR$/feature1" />
             <option value="$PROJECT_DIR$/feature2" />
             <option value="$PROJECT_DIR$/main" />
@@ -22,6 +21,7 @@
             <option value="$PROJECT_DIR$/navigation/feature1" />
             <option value="$PROJECT_DIR$/navigation/feature2" />
             <option value="$PROJECT_DIR$/navigation/main" />
+            <option value="$PROJECT_DIR$/shared" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

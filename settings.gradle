@@ -1,4 +1,4 @@
-rootProject.name = "Navigation POC"
+rootProject.name = "Android Modular Project Template"
 
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
@@ -10,7 +10,7 @@ dependencyResolutionManagement {
 
 // core modules
 include ":app"
-include ":core"
+include ":shared"
 
 // feature modules
 include ":main"
