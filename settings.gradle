@@ -21,3 +21,5 @@ include ":feature2"
 include ":navigation:core"
 include ":navigation:feature1"
 include ":navigation:feature2"
+include ':navigation:main'
+include ':main'

@@ -31,9 +31,11 @@ android {
 }
 
 dependencies {
+    api project(":main")
     api project(":feature1")
     api project(":feature2")
 
+    api project(":navigation:main")
     api project(":navigation:feature1")
     api project(":navigation:feature2")
 

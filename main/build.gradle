@@ -1,5 +1,5 @@
 plugins {
-    id "com.android.application"
+    id "com.android.library"
     id "kotlin-android"
     id "kotlin-kapt"
     id "dagger.hilt.android.plugin"
@@ -8,16 +8,6 @@ plugins {
 android {
     compileSdk 30
     buildToolsVersion "30.0.3"
-
-    defaultConfig {
-        applicationId "com.example.navigation"
-        minSdk 21
-        targetSdk 30
-        versionCode 1
-        versionName "1.0"
-
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-    }
 
     buildTypes {
         release {
@@ -42,9 +32,8 @@ android {
 
 dependencies {
     implementation project(":core")
-    implementation project(":main")
+    implementation project(":navigation:main")
 
-    implementation project(":navigation:core")
     implementation project(":navigation:feature1")
     implementation project(":navigation:feature2")
 

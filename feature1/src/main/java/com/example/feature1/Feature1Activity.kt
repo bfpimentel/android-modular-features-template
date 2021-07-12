@@ -4,11 +4,15 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.feature1.databinding.ActivityFeature1Binding
 import com.example.navigation.feature2.Feature2Navigator
+import com.example.navigation.main.MainNavigator
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
 @AndroidEntryPoint
 class Feature1Activity : AppCompatActivity() {
+
+    @Inject
+    lateinit var mainNavigator: MainNavigator
 
     @Inject
     lateinit var feature2Navigator: Feature2Navigator
@@ -26,8 +30,8 @@ class Feature1Activity : AppCompatActivity() {
         }
 
         binding.btnFeatureMain.setOnClickListener {
-//            navigator.goToMain(this)
-//            finish()
+            mainNavigator.goToMain(this)
+            finish()
         }
     }
 }
